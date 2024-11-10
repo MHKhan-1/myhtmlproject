@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Reset and global styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f0f8ff, #e0ffff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* Container styling */
+        .contact-container {
+            background: #fff;
+            padding: 25px 30px;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        /* Heading */
+        .contact-container h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-container p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 14px;
+            color: #666;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            width: 100%;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2);
+        }
+
+        /* Success message styling */
+        #successMessage {
+            color: #28a745;
+            font-size: 16px;
+            margin-top: 15px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Fill out the form below to get in touch with us.</p>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="successMessage">Thank you for contacting us! We’ll get back to you soon.</p>
+    </div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+            const successMessage = document.getElementById("successMessage");
+
+            if (name && email && message) {
+                // Simulate form submission
+                successMessage.style.display = "block";
+
+                // Reset the form
+                document.getElementById("contactForm").reset();
+            } else {
+                alert("Please fill out all fields before submitting.");
+            }
+        });
+    </script>
+</body>
+</html>

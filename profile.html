@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Job Portal</title>
+    <style>
+        /* Reset and global styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        /* Main container */
+        .profile-container {
+            background: #fff;
+            max-width: 800px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        /* Profile header */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-info h1 {
+            font-size: 24px;
+            color: #4CAF50;
+        }
+
+        .profile-info p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        /* Profile details section */
+        .profile-section {
+            margin-top: 20px;
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .profile-section h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .profile-section p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Contact button */
+        .edit-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .edit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- Profile Header with Picture and Basic Info -->
+        <div class="profile-header">
+            <div class="profile-photo">
+                <img src="IMG_20241108_134119.png" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h1>Mohd Hashir Khan</h1>
+                <p>12410724 | B.tech CSE First Year Student </p>
+            </div>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="profile-section">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> itzhashirkhan@gmail.com</p>
+            <p><strong>Phone:</strong> +91 9193267009</p>
+            <p><strong>Location:</strong> Punjab, Phagwara</p>
+        </div>
+
+        <!-- Career Information Section -->
+        <div class="profile-section">
+            <h2>Career Information</h2>
+            <p><strong>Currently Doing:</strong> B.tech in CSE From LPU.</p>
+            <p><strong>Schooling:</strong> St. Joseph's School (Puranpur).</p>
+            <p><strong>Skills:</strong> HTML, CSS, JAVA SCRIPT, Python, Graphic Designing and Video Editing </p>
+        </div>
+
+        <!-- Resume and Other Information -->
+        <div class="profile-section">
+            <h2>Resume</h2>
+            <p>Experienced full-stack developer specializing in building robust web applications. Passionate about creating scalable software and user-friendly digital solutions.</p>
+        </div>
+
+        <!-- Edit Profile Button -->
+        <a href="Job_Portal.html" class="edit-button">Back To Home </a>
+    </div>
+
+</body>
+</html>
